@@ -1,0 +1,181 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #F8F8F8;
+  }
+  
+  .rectangle {
+    margin: 75px auto 0;
+    
+    width: 650px;
+    height: 650px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #4444441A;
+    border-radius: 10px;
+    opacity: 1;
+
+    
+  }
+  
+  .bloc-tabs {
+    display: flex;
+
+    
+  }
+  .tabs {
+  
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+
+ 
+    margin-top: 55px;
+    margin-left: 20px;
+    width: 158px;
+    height: 41px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+
+    font: normal normal 600 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #02130E;
+  }
+  
+  .active-tabs  {
+    background: white;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 82%;
+    height: 1.5px;
+    background:black;
+  }
+  
+  
+  
+  button {
+    border: none;
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+
+    
+  }
+  .content {
+    background: white;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+  }
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+  }
+
+
+  ul.my-row {
+    display: table;
+    width: 100%;
+    margin-top: 30px;
+
+    
+  }
+  
+  ul.my-row > li {
+    display: table-cell;
+
+    
+  }
+
+  .checkicon{
+      width: 36px;
+
+      display: block;
+  margin: 0 auto;
+  }
+
+
+  .billName{
+    text-align: left;
+    font: normal normal bold 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #02130E;
+    opacity: 0.8;
+  }
+
+  .billDeadline{
+    text-align: left;
+    font: italic normal normal 12px/14px Roboto;
+    letter-spacing: 0px;
+    color: #ABB0AF;
+    opacity: 1;
+  }
+
+  .paymentType{
+    text-align: left;
+    font: normal normal bold 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #02130E;
+    opacity: 1;
+  }
+
+  .availability{
+    text-align: left;
+    font: italic normal normal 12px/14px Roboto;
+    letter-spacing: 0px;
+    color: #10BC91;
+    opacity: 1;
+  }
+
+  .amount{
+    text-align: right;
+    font: normal normal bold 14px/20px Roboto;
+    letter-spacing: 0px;
+    color: #02130E;
+    opacity: 1;
+  }
+
+
+  #payButton{
+    margin-top: 15%;
+    margin-left: 65%;
+
+    width: 198px;
+    height: 42px;
+
+    background: #10BC91 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+
+    text-align: center;
+    font: normal normal bold 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
