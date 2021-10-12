@@ -15,7 +15,7 @@ function Tabs() {
   const [notPaid,setNotPaid]=useState([]);
   const [totalToPay,setTotalToPay]=useState([]);
   
-  const url = 'https://test.soan-solutions.io/Test_front/datas'
+  const url = 'https://test.soan-solutions.io/test_front/datas'
 
   const headers = new Headers()
   const getData=()=>{
@@ -28,8 +28,12 @@ function Tabs() {
         setData(myJson.payments);
         const paid = myJson.payments.filter(bill => bill.payedDate);
         const notPaid =  myJson.payments.filter(bill => !bill.payedDate);
+        var total = notPaid.reduce(function (accumulator, bill) {
+          return accumulator + parseInt(bill.amount, 10);
+        }, 0);
         setPaid(paid);
         setNotPaid(notPaid);
+        setTotalToPay(total);
         
       });
   }
